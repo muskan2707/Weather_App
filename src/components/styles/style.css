@@ -1,0 +1,97 @@
+
+*{
+  font-family: "Jost";
+  
+}
+.container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.box{
+   background-color:rgb(165, 197, 247);
+   height:60vh;
+   margin-top:20vh;
+   width: 50vh;
+   border-radius:12px;
+}
+
+.inputField{
+  margin-top:2px;
+  text-align:center;
+}
+
+input{
+  border:1px solid black;
+  border-radius:20px;
+  padding:10px;
+
+}
+ 
+input:focus{
+   outline:none;
+}
+
+.total{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  flex-direction: column;
+
+}
+.display{
+  padding:10px;
+  font-size: 7vh; 
+  transition: all 1s linear;
+}
+.temp{
+  font-size:3vh;
+  padding-left:6vh;
+}
+
+.wave{
+  opacity:0.3;
+  position:absolute;
+  top:100%;
+  left:50%;
+  background: white;
+  width:50rem;
+  height:50rem;
+  margin-left:-25rem;
+  margin-top:-3rem;
+  transform-origin: 50% 48%;
+  border-radius:43%;
+  animation: drift 3000ms infinite linear;
+  z-index:1;
+}
+
+.one{
+  animation: drift 3000ms infinite linear;
+  opacity:0.1;
+  z-index:1;
+}
+
+.two{
+  animation: drift 7000ms infinite linear;
+  opacity:0.1;
+  z-index:3 !important;
+}
+.three{
+  animation: drift 5000ms infinite linear;
+  z-index:2 !important;
+  opacity:0.2;
+}
+
+@keyframes drift {
+  from{
+    transform :rotate(0deg);
+  }
+  from{
+    transform:rotate(360deg);
+  }
+}
+
+
